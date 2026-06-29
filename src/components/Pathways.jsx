@@ -6,7 +6,6 @@ export default function Pathways() {
   return (
     <section id="pathways" className="section pathways reveal">
       <div className="container">
-        <span className="eyebrow">Founder support</span>
         <h2 className="section__title">{pathways.heading}</h2>
         <p className="section__intro">{pathways.intro}</p>
 

@@ -1,7 +1,12 @@
-// Infinite horizontal marquee. Renders the children track twice so the loop is seamless.
+// Infinite horizontal marquee. Repeats the items enough to overflow the viewport,
+// then renders that sequence twice and translates -50% for a seamless loop.
 // Pauses on hover; honors prefers-reduced-motion via CSS.
-export default function Marquee({ items, renderItem, speed = 36, reverse = false, className = '' }) {
-  const track = [...items, ...items]
+export default function Marquee({ items, renderItem, speed = 40, reverse = false, className = '' }) {
+  if (!items || items.length === 0) return null
+  // Ensure the base sequence is long enough to fill wide screens before looping.
+  const reps = Math.max(2, Math.ceil(10 / items.length))
+  const base = Array.from({ length: reps }, () => items).flat()
+  const track = [...base, ...base]
   return (
     <div className={`marquee ${className}`} aria-hidden="true">
       <div

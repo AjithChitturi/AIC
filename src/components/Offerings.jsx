@@ -16,7 +16,6 @@ export default function Offerings() {
   return (
     <section id="offer" className="section offerings reveal">
       <div className="container">
-        <span className="eyebrow">{offerings.subheading}</span>
         <h2 className="section__title">{offerings.heading}</h2>
         <p className="section__intro">{offerings.intro}</p>
         <div className="offerings__grid">

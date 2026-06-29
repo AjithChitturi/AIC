@@ -23,8 +23,7 @@ export const about = {
   body:
     'AIC Mahindra e-Hub Foundation is a Section 8 not-for-profit company and an Atal Incubation Centre supported by the Atal Innovation Mission, NITI Aayog, Government of India. It has been established by Mahindra University to support early-stage startups, entrepreneurs and innovators in building products, validating business models and creating ventures that can reach the market. The incubator works with startups at the early and critical stages of their journey — problem validation, prototyping, product development, user testing, market access, funding preparedness and business growth. Startups have access to mentors, prototyping infrastructure, lab facilities, business guidance, industry experts, investor connects and relevant ecosystem partners.',
   stats: [
-    { value: '38+', label: 'Startups in Programmes' },
-    { value: 'NITI', label: 'Aayog Supported' },
+    { value: '100+', label: 'Startups in Programmes' },
     { value: '18', label: 'Month Incubation Programme' },
     { value: '4', label: 'Structured Programmes' },
   ],
@@ -89,13 +88,25 @@ export const journey = {
   heading: 'Startup Journey with AIC Mahindra',
   intro:
     'AIC Mahindra e-Hub follows a stage-wise incubation model designed to support founders at different points in their entrepreneurial journey. The approach emphasises clarity of problem definition, feasibility assessment, and disciplined execution.',
-  stages: [
-    { label: 'Idea', icon: '💡' },
-    { label: 'POC', icon: '📄' },
-    { label: 'Customer Discovery', icon: '🔍' },
-    { label: 'MVP', icon: '🛠️' },
-    { label: 'Market Entry / Early Revenue', icon: '🪙' },
-    { label: 'Scaling up', icon: '📈' },
+  // Three phases, each spanning the stages it supports; a GO/No-Go gate sits between phases.
+  phases: [
+    {
+      name: 'Pre-Incubation',
+      color: '#c1121f',
+      stages: ['Idea', 'Prototype / PoC', 'Customer Discovery'],
+      loop: 'Pivot',
+    },
+    {
+      name: 'Incubation',
+      color: '#c19a4b',
+      stages: ['MVP', 'Market Entry / Early Revenue / 1st Funding'],
+      loop: 'Iterate',
+    },
+    {
+      name: 'Scaling up',
+      color: '#2f8f6b',
+      stages: ['Scaling up'],
+    },
   ],
 }
 
@@ -127,37 +138,31 @@ export const collaborations = {
   intro: 'Partners, funds and ecosystem enablers working alongside AIC Mahindra.',
   partners: [
     { name: 'Campus Fund', img: CDN + '2026/06/Campus-Fund.webp' },
+    { name: 'StartupWala', img: CDN + '2026/06/startupwala-2.webp' },
+    { name: 'ValleyNxt Ventures', img: CDN + '2026/06/valleynxt-ventures-1.webp' },
     { name: 'TGIC', img: CDN + '2026/06/TGIC.webp' },
     { name: 'Notion', img: CDN + '2026/06/notion.webp' },
-    { name: 'Startupwala', img: CDN + '2026/06/startupwala-2.webp' },
-    { name: 'ValleyNXT Ventures', img: CDN + '2026/06/valleynxt-ventures-1.webp' },
-    { name: 'Campus Angels Network', img: CDN + '2026/05/thecampusangels_logo.jpeg' },
-    { name: 'ISBA', img: CDN + '2026/05/cropped-isba-192x192-1.jpg' },
-    { name: 'Startup Legal', img: CDN + '2026/05/cropped-cropped-cropped-startup-legal-1-01-1-1-1.png' },
-    { name: 'Amazon Web Services', img: CDN + '2026/05/Amazon_Web_Services_Logo.svg.png' },
-    { name: 'Tech Mahindra', img: CDN + '2026/05/Tech_Mahindra_New_Logo.svg-1024x290.png' },
   ],
 }
 
 export const startups = {
-  heading: 'Meet the AIC Startups',
+  heading: 'Some of Our startups.',
   intro: 'Ventures growing inside the AIC Mahindra e-Hub — from first prototype to market.',
   items: [
-    { name: 'My Job Factory', img: CDN + '2026/04/my-job-factory-400x120-1.webp' },
-    { name: 'Skia', img: CDN + '2026/04/skia.webp' },
-    { name: 'DruFarm', img: CDN + '2026/04/drufarm.webp' },
-    { name: 'Co2L', img: CDN + '2026/04/Co2L.webp' },
-    { name: 'Stylin', img: CDN + '2026/04/stylin-400x120-1.webp' },
-    { name: 'Sparts', img: CDN + '2026/04/sparts-400x120-1.webp' },
-    { name: 'NeoPerk', img: CDN + '2026/04/neoperk-400x120-1.webp' },
-    { name: 'AgrowSure', img: CDN + '2026/04/agrowsure-400x120-1.webp' },
-    { name: 'Sabhyasha', img: CDN + '2026/04/sabhyasha.webp' },
-    { name: 'Harvested Robotics', img: CDN + '2026/04/harvested-robotics-400x120-1.webp' },
-    { name: 'Mantis', img: CDN + '2026/04/mantis-400x120-1.webp' },
-    { name: 'Extrive', img: CDN + '2026/04/extrive-400x120-1.webp' },
-    { name: 'Rural Rise Agrinery', img: CDN + '2026/04/Rural-Rise-Agrinery.webp' },
-    { name: 'Orobot', img: CDN + '2026/04/Orobot-400x120-1.webp' },
-    { name: 'Avika', img: CDN + '2026/06/Avika.webp' },
+    { name: 'Arthachain', img: '/startups/arthachain.jpg' },
+    { name: 'Avika', img: '/startups/avika.png' },
+    { name: 'Avisa', img: '/startups/avisa.jpg' },
+    { name: 'Earthen Tunes', img: '/startups/earthen-tunes.jpg' },
+    { name: 'Extrive Innovations', img: '/startups/extrive.jpeg' },
+    { name: 'Harvested Robotics', img: '/startups/harvested-robotics.png' },
+    { name: 'Klar Cleantech', img: '/startups/klar-cleantech.jpg' },
+    { name: 'Mantis', img: '/startups/mantis.png' },
+    { name: 'Serefy Innovations', img: '/startups/serefy.jpg' },
+    { name: 'Sparts', img: '/startups/sparts.jpeg' },
+    { name: 'The Funkey App', img: '/startups/funkey.jpg' },
+    { name: 'Vasstr', img: '/startups/vasstr.jpg' },
+    { name: 'Sustaina', img: '/startups/sustaina.jpg' },
+    { name: 'AIC Startup', img: '/startups/startup-x.avif' },
   ],
 }
 

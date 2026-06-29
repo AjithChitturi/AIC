@@ -17,25 +17,22 @@ function Avatar({ person }) {
   if (person.img && !failed) {
     return (
       <div className="person__avatar">
-        <img
-          src={person.img}
-          alt={person.name}
-          loading="lazy"
-          onError={() => setFailed(true)}
-        />
+        <img src={person.img} alt={person.name} loading="lazy" onError={() => setFailed(true)} />
       </div>
     )
   }
   return <div className="person__avatar person__avatar--initials">{initials(person.name)}</div>
 }
 
-export default function PersonCard({ person }) {
+// `minimal` (mentors): image + View Profile only. Otherwise (core team): name, role, bio too.
+export default function PersonCard({ person, minimal }) {
   const inner = (
     <>
       <Avatar person={person} />
       <div className="person__body">
         <h4 className="person__name">{person.name}</h4>
-        <p className="person__role">{person.role}</p>
+        {!minimal && <p className="person__role">{person.role}</p>}
+        {!minimal && person.bio && <p className="person__bio">{person.bio}</p>}
         <span className="person__link">
           View Profile
           <span className="person__arrow" aria-hidden="true">
@@ -46,15 +43,17 @@ export default function PersonCard({ person }) {
     </>
   )
 
+  const cls = `person${minimal ? ' person--minimal' : ''}`
+
   if (person.type === 'profile') {
     return (
-      <Link className="person" to={`/profile/${person.slug}`}>
+      <Link className={cls} to={`/profile/${person.slug}`} aria-label={person.name}>
         {inner}
       </Link>
     )
   }
   return (
-    <a className="person" href={person.url} target="_blank" rel="noreferrer">
+    <a className={cls} href={person.url} target="_blank" rel="noreferrer" aria-label={`${person.name} — LinkedIn profile`}>
       {inner}
     </a>
   )

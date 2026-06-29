@@ -12,7 +12,6 @@ export default function Infrastructure() {
   return (
     <section id="infrastructure" className="section infra reveal">
       <div className="container">
-        <span className="eyebrow">Campus & facilities</span>
         <h2 className="section__title">{infrastructure.heading}</h2>
         <p className="infra__body">{infrastructure.body}</p>
         <ul className="infra__list">

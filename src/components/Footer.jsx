@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <Logo />
+          <Logo image src="/aic-logo-footer.png" />
           <p className="footer__address">{footer.address}</p>
           <p className="footer__contact">
             <a href={`tel:${footer.phone.replace(/\s|–/g, '')}`}>{footer.phone}</a>

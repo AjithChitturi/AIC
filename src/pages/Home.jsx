@@ -10,7 +10,6 @@ import Infrastructure from '../components/Infrastructure.jsx'
 import Startups from '../components/Startups.jsx'
 import Collaborations from '../components/Collaborations.jsx'
 import Team from '../components/Team.jsx'
-import CTA from '../components/CTA.jsx'
 
 export default function Home() {
   const { hash } = useLocation()
@@ -37,7 +36,6 @@ export default function Home() {
       <Startups />
       <Collaborations />
       <Team />
-      <CTA />
     </main>
   )
 }

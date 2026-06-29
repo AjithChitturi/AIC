@@ -5,7 +5,6 @@ export default function About() {
     <section id="about" className="section about reveal">
       <div className="container about__grid">
         <div className="about__lead">
-          <span className="eyebrow">Who we are</span>
           <h2 className="section__title">{about.heading}</h2>
         </div>
         <div className="about__content">
