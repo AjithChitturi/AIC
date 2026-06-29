@@ -8,7 +8,11 @@ export default function About() {
           <h2 className="section__title">{about.heading}</h2>
         </div>
         <div className="about__content">
-          <p className="about__body">{about.body}</p>
+          <div className="about__body">
+            {about.body.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
           <div className="stats">
             {about.stats.map((s) => (
               <div className="stat" key={s.label}>

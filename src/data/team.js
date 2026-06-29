@@ -46,5 +46,5 @@ export const mentors = [
   { name: 'Bhushan Borotikar', role: 'Research Head, Symbiosis Centre for Medical Image Analysis, Pune, India', type: 'external', url: 'https://www.linkedin.com/in/bhushan-borotikar-0773514/', img: U + '2026/06/Bhushan-Borotikar.webp' },
   { name: 'Amit Agrahari', role: 'Data Scientist (AI/ML) & Innovation PM @ Philips', type: 'external', url: 'https://www.linkedin.com/in/amit-agrahari/', img: '/mentors/amit-agrahari.png' },
   { name: 'Dhairya Jain', role: 'Company Secretary Startup Consultant', type: 'external', url: 'https://www.linkedin.com/in/jaindhairya/', img: '/mentors/dhairya-jain.jpg' },
-  { name: 'Sharda Gautam', role: 'Mentor', type: 'external', url: 'https://www.linkedin.com/in/shardagautam/', img: U + '2026/06/Sharda-Gautam.webp' },
+  { name: 'Viiveck Verma', role: 'Mentor', type: 'external', url: 'https://www.linkedin.com/in/viiveckverma/', img: '/mentors/viiveck.jpg' },
 ]

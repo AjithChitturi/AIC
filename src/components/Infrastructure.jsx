@@ -13,7 +13,11 @@ export default function Infrastructure() {
     <section id="infrastructure" className="section infra reveal">
       <div className="container">
         <h2 className="section__title">{infrastructure.heading}</h2>
-        <p className="infra__body">{infrastructure.body}</p>
+        <div className="infra__body">
+          {infrastructure.body.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
         <ul className="infra__list">
           {infrastructure.facilities.map((f) => (
             <li key={f}><Check /> {f}</li>

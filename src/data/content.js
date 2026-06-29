@@ -5,7 +5,7 @@
 export const nav = [
   { label: 'Home', href: '#home' },
   { label: 'About Us', href: '#about' },
-  { label: 'Pathways', href: '#pathways' },
+  { label: 'Programs', href: '#pathways' },
   { label: 'What We Offer', href: '#offer' },
   { label: 'Infrastructure', href: '#infrastructure' },
   { label: 'Team', href: '#team' },
@@ -20,17 +20,20 @@ export const hero = {
 
 export const about = {
   heading: 'About AIC Mahindra',
-  body:
-    'AIC Mahindra e-Hub Foundation is a Section 8 not-for-profit company and an Atal Incubation Centre supported by the Atal Innovation Mission, NITI Aayog, Government of India. It has been established by Mahindra University to support early-stage startups, entrepreneurs and innovators in building products, validating business models and creating ventures that can reach the market. The incubator works with startups at the early and critical stages of their journey — problem validation, prototyping, product development, user testing, market access, funding preparedness and business growth. Startups have access to mentors, prototyping infrastructure, lab facilities, business guidance, industry experts, investor connects and relevant ecosystem partners.',
+  body: [
+    'The centre works closely with entrepreneurs from the earliest stages of their journey, helping them validate ideas, develop prototypes, refine business models, build products, access markets, prepare for fundraising, and scale their ventures. Through a strong network of mentors, industry experts, investors, research facilities, and ecosystem partners, AIC Mahindra provides the guidance and resources required to transform innovative ideas into successful businesses.',
+    "Over the years, AIC Mahindra has built a strong track record of supporting startups through incubation programmes, accelerator cohorts, capacity-building initiatives, investor connect sessions, international collaborations, and strategic partnerships. With a focus on innovation, technology, and entrepreneurship, the foundation continues to nurture founders and contribute to India's growing startup ecosystem.",
+  ],
   stats: [
-    { value: '100+', label: 'Startups in Programmes' },
-    { value: '18', label: 'Month Incubation Programme' },
-    { value: '4', label: 'Structured Programmes' },
+    { value: '100+', label: 'Startups through different programs' },
+    { value: '6Cr+', label: 'Funding Raised' },
+    { value: '8Cr+', label: 'Revenue' },
+    { value: '100+', label: 'Ecosystem Partners & Supporters' },
   ],
 }
 
 export const pathways = {
-  heading: 'Startup Pathways and Founder Support',
+  heading: 'Startup Programs and Founder Support',
   intro:
     'AIC Mahindra supports founders at different stages of their startup journey, from early ideas to validated products and incubation-ready ventures. The pathways are designed to help founders get the right kind of support at the right time.',
   tabs: [
@@ -112,8 +115,10 @@ export const journey = {
 
 export const infrastructure = {
   heading: 'AIC infrastructure and campus ecosystem',
-  body:
-    'Mahindra e-Hub is spread over 12,000 sq. feet of area, which can accommodate 15 entrepreneurs. The incubation centre facilitates the starting, shaping and scaling up of innovative ventures resulting from student-faculty research. Founders operate within the Mahindra University campus and have access to shared and specialised facilities.',
+  body: [
+    'AIC Mahindra e-Hub Foundation is the Atal Incubation Centre established by Mahindra University, Hyderabad, with support from the Atal Innovation Mission (AIM), NITI Aayog, Government of India. Registered as a Section 8 not-for-profit company, the foundation serves as the entrepreneurship and innovation hub of the university, supporting startups, entrepreneurs, and innovators in developing technology-led ventures.',
+    'The incubation centre supports founders from idea validation to business growth through incubation, mentoring, product development, business model validation, market access, funding preparedness, and investor connect. Startups also have access to mentors, industry experts, research infrastructure, prototyping facilities, and ecosystem partners to support the development and growth of their ventures.',
+  ],
   facilities: [
     'Shared Co-Working Space',
     'Dedicated Private Cabins',
@@ -137,11 +142,16 @@ export const collaborations = {
   heading: 'Collaborations',
   intro: 'Partners, funds and ecosystem enablers working alongside AIC Mahindra.',
   partners: [
-    { name: 'Campus Fund', img: CDN + '2026/06/Campus-Fund.webp' },
-    { name: 'StartupWala', img: CDN + '2026/06/startupwala-2.webp' },
-    { name: 'ValleyNxt Ventures', img: CDN + '2026/06/valleynxt-ventures-1.webp' },
-    { name: 'TGIC', img: CDN + '2026/06/TGIC.webp' },
-    { name: 'Notion', img: CDN + '2026/06/notion.webp' },
+    { name: 'Campus Fund', img: '/collab/campus-fund.png' },
+    { name: 'StartupWala', img: '/collab/startupwala.png' },
+    { name: 'ValleyNxt Ventures', img: '/collab/valleynxt-ventures.png' },
+    { name: 'TGIC', img: '/collab/tgic.png' },
+    { name: 'Notion', img: '/collab/notion.png' },
+    { name: 'Campus Angels Network', img: '/collab/campus-angels.jpeg' },
+    { name: 'MathWorks', img: '/collab/mathworks.jpeg' },
+    { name: 'AMTZ', img: '/collab/amtz.jpeg' },
+    { name: 'Babson College', img: '/collab/babson.png' },
+    { name: 'École Centrale Paris', img: '/collab/ecole-centrale.svg' },
   ],
 }
 
@@ -158,7 +168,7 @@ export const startups = {
     { name: 'Klar Cleantech', img: '/startups/klar-cleantech.jpg' },
     { name: 'Mantis', img: '/startups/mantis.png' },
     { name: 'Serefy Innovations', img: '/startups/serefy.jpg' },
-    { name: 'Sparts', img: '/startups/sparts.jpeg' },
+    { name: 'Anveza.Ai', img: null },
     { name: 'The Funkey App', img: '/startups/funkey.jpg' },
     { name: 'Vasstr', img: '/startups/vasstr.jpg' },
     { name: 'Sustaina', img: '/startups/sustaina.jpg' },
@@ -178,22 +188,8 @@ export const cta = {
 
 export const footer = {
   address:
-    'Mahindra University, Survey No: 62/1A, Bahadurpally Jeedimetla, Hyderabad – 500043 – Telangana, INDIA',
-  phone: '040 – 67135100',
-  email: 'info@mahindrauniversity.edu.in',
-  columns: [
-    {
-      title: 'Menu',
-      links: ['About Us', 'Schools', 'Programmes', 'Centres', 'Life at MU', 'MU Gallery', 'Events'],
-    },
-    {
-      title: 'Quick Links',
-      links: ['Admission 2026 – 2027', 'Pay Fees', 'Academic Calendar', 'Internships', 'Careers', 'Placements', 'Blog', 'Contact Us'],
-    },
-    {
-      title: 'Other Key Links',
-      links: ['Mandatory Disclosures', 'Download Brochure', 'Public Self Disclosure', 'Code of Conduct', 'Social Initiatives', 'Committees', 'Covid SOP', 'Policies'],
-    },
-  ],
-  copyright: '© 2026 Mahindra University. All Rights Reserved.',
+    'C/O Mahindra University, Survey No: 62/1A, Bahadurpally, Jeedimetla, Hyderabad, Telangana – 500043',
+  phone: '040 6817 3288',
+  email: 'aic@mahindrauniversity.edu.in',
+  copyright: 'Copyright @ AIC Mahindra',
 }
